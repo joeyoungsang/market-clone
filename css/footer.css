@@ -23,7 +23,22 @@ footer {
   padding-bottom: 20px;
   cursor: pointer;
 }
+
+@keyframes icons-move-up {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer-icons__img {
   width: 30px;
   margin-bottom: 5px;
+}
+.footer-icons:hover .footer-icons__img {
+  animation: 1.5s icons-move-up;
 }
