@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>memo</title>
+    <script defer src="js/chatting.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <header>
+    <div class="info-bar">
+      <div class="info-bar__time">20:55</div>
+      <div class="info-bar__icons">
+        <img src="../assets/chart-bar.svg" alt="chart-bar" />
+        <img src="../assets/wifi.svg" alt="wifi" />
+        <img src="../assets/battery-50.svg" alt="battery" />
+      </div>
+    </div>
+    <div class="menu-bar">
+      <div class="menu-bar__location">
+        <span>역삼 1동</span>
+        <img src="../assets/chevron-down.svg" alt="chevron-down" />
+      </div>
+      <div class="menu-bar__icons">
+        <img src="../assets/magnifying-glass.svg" alt="magnifying-glass" />
+        <img src="../assets/bars-3.svg" alt="bars-3" />
+        <img src="../assets/bell.svg" alt="bell" />
+      </div>
+    </div>
+  </header>
+  <main>
+  <body>
+    <form action="" id="memo-form">
+      <label for="memo-input"></label>
+      <input
+        type="text"
+        id="memo-input"
+        placeholder="여기에 메모를 입력해주세요."
+        required
+      />
+      <button type="submit">입력</button>
+    </form>
+    <ul id="memo-ul"></ul>
+    <div data-id=""></div>
+    </main>
+    <footer>
+        <div class="footer-block">
+          <div class="footer-icons" id="homeButton"onclick="location.href='index.html'" >
+            <div class="footer-icons__img">
+              <img src="../assets/home.svg" alt="home" />
+            </div>
+            <div>홈</div>
+          </div>
+          <div class="footer-icons">
+            <div class="footer-icons__img">
+              <img src="../assets/news.svg" alt="news" />
+            </div>
+            <div>동네 생활</div>
+          </div class="footer-icons__img">
+          <div class="footer-icons">
+            <div class="footer-icons__img">
+              <img src="../assets/location.svg" alt="location" />
+            </div>
+            <div>내 근처</div>
+          </div>
+          <div class="footer-icons" id=chattingButton onclick="location.href='chatting.html'">
+            <div class="footer-icons__img" >
+              <img src="../assets/chatting.svg" alt="chatting"/>
+            </div>
+            <div>채팅</div>
+          </div>
+          <div class="footer-icons">
+            <div class="footer-icons__img">
+              <img src="../assets/user.svg" alt="user" />
+            </div>
+            <div>나의 당근</div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
